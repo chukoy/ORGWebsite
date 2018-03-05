@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!--nav-->
+<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="About Us.html">About Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="The Team.html">The Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Location & Fares.html">Location & Fares</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="Contact Us.html">Contact Us</a>
+      </li>
+    </ul>
+    </div>
+  </div>
+</nav>
+<!--nav-->
+<!--***/Slideshow***-->
+	 <div class="slideshow-container">
+
+		<div class="mySlides">
+		  <div class="numbertext">1 / 3</div>
+		  <img src="Images/1.jpg" style="width:100%">
+		  <div class="text">Our Lady Of Mt. Carmel Montessori</div>
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">2 / 3</div>
+		  <img src="Images/olmcm-bus.jpg" style="width:100%">
+		  <div class="text">OLMCM BUS</div>
+		</div>
+
+		<div class="mySlides">
+		  <div class="numbertext">3 / 3</div>
+		  <img src="Images/Logo.jpg" style="width:100%">
+		  <div class="text">Caption Three</div>
+		</div>
+
+		</div>
+		<br>
+
+		<div style="text-align:center">
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+		  <span class="dot"></span> 
+</div>
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
+</script>
+    <!--***/slideshow***-->
+    ]    <!--Footer-->
+      <footer class="page-footer font-small stylish-color-dark pt-4 mt-4">
+      
+          <!--Footer Links-->
+          <div class="container text-center text-md-left">
+              <div class="row">
+      
+                  <!--First column-->
+                  <div class="col-md-4">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Baguio Transport</h5>
+                      <p>Baguio Transport is a new transportation service available to residents of Baguio City, Nueva Ecija, La Union , and Pangasinan.  If you live and work in one of these Locations, and need transportation to and from your place of business, you are eligible to use Baguio Transport.</p>
+                  </div>
+                  <!--/.First column-->
+      
+                  <hr class="clearfix w-100 d-md-none">
+      
+                  <!--Second column-->
+                  <div class="col-md-2 mx-auto">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold"></h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#!">Home</a></li>
+                          <li><a href="#!">About Us</a></li>
+                          <li><a href="#!">The Team</a></li>
+                          <li><a href="#!">Location & Fares</a></li>
+
+                      </ul>
+                  </div>
+                  <!--/.Second column-->
+      
+                  <hr class="clearfix w-100 d-md-none">
+      
+                  <!--Third column-->
+                  <div class="col-md-2 mx-auto">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Links</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#!">Link 1</a></li>
+                          <li><a href="#!">Link 2</a></li>
+                          <li><a href="#!">Link 3</a></li>
+                          <li><a href="#!">Link 4</a></li>
+                      </ul>
+                  </div>
+                  <!--/.Third column-->
+      
+                  <hr class="clearfix w-100 d-md-none">
+      
+                  <!--Fourth column-->
+                  <div class="col-md-2 mx-auto">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold ">Links</h5>
+                      <ul class="list-unstyled">
+                          <li><a href="#!">Link 1</a></li>
+                          <li><a href="#!">Link 2</a></li>
+                          <li><a href="#!">Link 3</a></li>
+                          <li><a href="#!">Link 4</a></li>
+                      </ul>
+                  </div>
+                  <!--/.Fourth column-->
+              </div>
+          </div>
+          <!--/.Footer Links-->
+      
+          <hr>
+      
+         
+      
+          <hr>
+      
+          <!--Social buttons-->
+          <div class="text-center">
+              <ul class="list-unstyled list-inline">
+                  <li class="list-inline-item"><a class="btn-floating btn-sm btn-fb mx-1"><i class="fa fa-facebook"> </i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm btn-tw mx-1"><i class="fa fa-twitter"> </i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm btn-gplus mx-1"><i class="fa fa-google-plus"> </i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm btn-li mx-1"><i class="fa fa-linkedin"> </i></a></li>
+                  <li class="list-inline-item"><a class="btn-floating btn-sm btn-dribbble mx-1"><i class="fa fa-dribbble"> </i></a></li>
+              </ul>
+          </div>
+          <!--/.Social buttons-->
+      
+          <!--Copyright-->
+          <div class="footer-copyright py-3 text-center">
+              <div class="container-fluid">
+                  © 2017 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+      
+              </div>
+          </div>
+          <!--/.Copyright-->
+      
+      </footer>
+      <!--/.Footer-->
+</body>
+
+</html>
+<!--https://mdbootstrap.com/components/bootstrap-footer/-->
