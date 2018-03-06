@@ -1,6 +1,10 @@
-style>
+
 .container {
-     width: 80%; /* for example */
+     width: 90%; /* for example */
     margin: auto;
 }
 
+navbar-nav mr-auto{
+	float: right;
+	margin-top: : 30px;
+}
